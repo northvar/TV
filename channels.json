@@ -2,559 +2,649 @@
   {
     "name": "NBT",
     "logo": "https://cms.dmpcdn.com/livetv/2023/10/02/4a2afc60-60f1-11ee-a78e-f70ba0052fab_webp_original.webp",
-    "src": "https://cdn-edge.iiptvcdn.com/live_event/smil:f180-054a-38d7-ce66-f7cf.smil/chunklist_w1837654225_b3128000.m3u8?null",
+    "src": [
+      "https://cdn-edge.iiptvcdn.com/live_event/smil:f180-054a-38d7-ce66-f7cf.smil/chunklist_w1837654225_b3128000.m3u8?null"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "TPBS",
     "logo": "https://cms.dmpcdn.com/livetv/2023/09/15/ab170410-5377-11ee-8e1b-194edbb69638_webp_original.webp",
-    "src": "https://thaipbs-ophctt.cdn.byteark.com/live/playlist.m3u8",
+    "src": [
+      "https://thaipbs-ophctt.cdn.byteark.com/live/playlist.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "5HD",
     "logo": "https://cms.dmpcdn.com/livetv/2023/07/18/7e060a10-2515-11ee-864f-a52221dad038_webp_original.webp",
-    "src": "https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8",
+    "src": [
+      "https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "T SPORT",
     "logo": "https://cms.dmpcdn.com/livetv/2022/02/10/e00c0e00-8a3c-11ec-8f9e-831d2ccecc69_webp_original.webp",
-    "src": "https://live-us1.thaimomo.com/live-as/chtsport-1/playlist.m3u8",
+    "src": [
+      "https://live-us1.thaimomo.com/live-as/chtsport-1/playlist.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "TPTV",
     "logo": "https://cms.dmpcdn.com/livetv/2023/11/22/2a4de600-8919-11ee-8416-3dc6bea66698_webp_original.webp",
-    "src": "https://tv-live.tpchannel.org/live/tv_1080p.m3u8",
+    "src": [
+      "https://tv-live.tpchannel.org/live/tv_1080p.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "TNN",
     "logo": "https://cms.dmpcdn.com/livetv/2023/10/02/75023d90-60f1-11ee-935a-5d4eba985103_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/16/16.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/16/16.mpd"
+	  "https://cdn2.stream.atmflix.live/atmflixlive/tnn/playlist.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "Nation",
     "logo": "https://cms.dmpcdn.com/livetv/2023/09/09/9c6f59c0-4ebe-11ee-99a7-832609069236_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/22/22.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/22/22.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "Workpoint",
     "logo": "https://cms.dmpcdn.com/livetv/2023/11/17/2a1de990-852d-11ee-bf98-41acc8fd04fc_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/23/23.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/23/23.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "True4U",
     "logo": "https://cms.dmpcdn.com/livetv/2023/09/15/84504210-5377-11ee-aaa1-7d584d8ca7a4_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/24/24.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/24/24.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "GMM25",
     "logo": "https://cms.dmpcdn.com/livetv/2020/11/19/ed873d50-2a22-11eb-bed4-0972e345f90c_original.png",
-    "src": "https://fastly.live.brightcove.com/6392745120112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTI3NDUxMjAxMTIifQ.w9Q_oqsE_WFClGF5tLVDtHnz5zfHHgNpumxVYNx4yYw/playlist-hls.m3u8",
+    "src": [
+      "https://fastly.live.brightcove.com/6392745120112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTI3NDUxMjAxMTIifQ.w9Q_oqsE_WFClGF5tLVDtHnz5zfHHgNpumxVYNx4yYw/playlist-hls.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "ช่อง 8",
     "logo": "https://cms.dmpcdn.com/livetv/2026/02/27/27350760-13ae-11f1-b8cb-95cb418dab77_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/27/27.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/27/27.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "MONO 29",
     "logo": "https://e7.pngegg.com/pngimages/776/550/png-clipart-thailand-mono29-series-television-channel-television-text.png",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/29/29.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/29/29.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "MCOT",
     "logo": "https://cms.dmpcdn.com/livetv/2023/09/09/9cc40970-4ebe-11ee-9801-97f95b5eed9a_webp_original.webp",
-    "src": "https://mcothd-streaming-edge-cdn.mcot.net/tencentmcot/smil:tencentmcot.smil/playlist.m3u8",
+    "src": [
+      "https://mcothd-streaming-edge-cdn.mcot.net/tencentmcot/smil:tencentmcot.smil/playlist.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "ONE",
     "logo": "https://cms.dmpcdn.com/livetv/2019/01/16/396384be-35dc-4d11-bf04-06c9546ec7bc.png",
-    "src": "https://fastly.live.brightcove.com/6393158620112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTMxNTg2MjAxMTIifQ.Pv-kHDlJaV05HiJ2AQmS3PnV2ZQg7ovszKptAGg1EN0/playlist-hls.m3u8",
+    "src": [
+      "https://fastly.live.brightcove.com/6393158620112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTMxNTg2MjAxMTIifQ.Pv-kHDlJaV05HiJ2AQmS3PnV2ZQg7ovszKptAGg1EN0/playlist-hls.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "Thairath",
     "logo": "https://cms.dmpcdn.com/livetv/2024/07/18/848915e0-44e9-11ef-9e86-a13521bc09bd_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/32/32.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/32/32.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "3HD",
     "logo": "https://cms.dmpcdn.com/livetv/2023/07/24/5ff3e270-29cc-11ee-b2f4-e9de482d866e_webp_original.webp",
-    "src": "https://live-us1.thaimomo.com/live-as/ch3hd-3/playlist.m3u8",
+    "src": [
+      "https://live-us1.thaimomo.com/live-as/ch3hd-3/playlist.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "Amarin",
     "logo": "https://cms.dmpcdn.com/livetv/2024/07/23/5e86fbc0-48c0-11ef-9fca-d9696b8af2b7_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/34/34.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/34/34.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "7HD",
     "logo": "https://cms.dmpcdn.com/livetv/2023/07/19/212d15e0-25e7-11ee-bfc1-85e95548413c_webp_original.webp",
-    "src": "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/35/35.mpd",
+    "src": [
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/35/35.mpd"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "PPTV",
     "logo": "https://cms.dmpcdn.com/livetv/2024/06/26/48fb8a90-338b-11ef-a958-ed31043c43a3_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1011/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1011/playlist.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "Topnews",
     "logo": "https://cms.dmpcdn.com/livetv/2025/06/19/cab7bcc0-4cc6-11f0-b437-536ba535ba63_webp_original.webp",
-    "src": "https://live.topnews.co.th/hls/topnews_a_720.m3u8",
+    "src": [
+      "https://live.topnews.co.th/hls/topnews_a_720.m3u8"
+    ],
     "category": "news"
   },
   {
     "name": "News1",
     "logo": "https://news1live.com/images/social-share-logo.png",
-    "src": "https://server1.streamssl.com/stream/news1_hi.m3u8",
+    "src": [
+      "https://server1.streamssl.com/stream/news1_hi.m3u8"
+    ],
     "category": "news"
   },
   {
     "name": "ThaiChaiyo",
     "logo": "https://is2-ssl.mzstatic.com/image/thumb/Purple6/v4/30/12/f9/3012f988-4199-4512-beeb-ae2ed5d53cb3/pr_source.png/100x100bb-85.jpg",
-    "src": "https://live-iptv.thaichaiyo.tv/tcy/live-720P.m3u8",
+    "src": [
+      "https://live-iptv.thaichaiyo.tv/tcy/live-720P.m3u8"
+    ],
     "category": "ทีวีดิจิตอล"
   },
   {
     "name": "VIPA",
     "logo": "https://static.wixstatic.com/media/ec14fa_543a59aaaa0048a4a723d509e4a12bfd~mv2.png/v1/fill/w_300,h_294,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ec14fa_543a59aaaa0048a4a723d509e4a12bfd~mv2.png",
-    "src": "https://fastly.live.brightcove.com/1846248737588002042/ap-southeast-1/6075037809001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoibzRoaGc2LmVncmVzcy5zYjBmOGsiLCJhY2NvdW50X2lkIjoiNjA3NTAzNzgwOTAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDc1MDM3ODA5MDAxIl0sImp0aSI6IjE4NDYyNDg3Mzc1ODgwMDIwNDIifQ.HbjGHxGv87ivAdsCtAdEDjj2SVCfRnCUMYWn2fCkVPY/chunklist__3.m3u8",
+    "src": [
+      "https://fastly.live.brightcove.com/1846248737588002042/ap-southeast-1/6075037809001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoibzRoaGc2LmVncmVzcy5zYjBmOGsiLCJhY2NvdW50X2lkIjoiNjA3NTAzNzgwOTAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDc1MDM3ODA5MDAxIl0sImp0aSI6IjE4NDYyNDg3Mzc1ODgwMDIwNDIifQ.HbjGHxGv87ivAdsCtAdEDjj2SVCfRnCUMYWn2fCkVPY/chunklist__3.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "3BB Asia",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/CgLZMVLSZKNMMeGb1H5n2iiN37ODTzl3-logo-3BB-Asian-ช่องรายการ_370x180_(1).jpeg",
-    "src": "https://hls.iptv-th.workers.dev/live/4006/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4006/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Asianmore",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/XaSIO94qGjzo3e5EF94PKAXkHvrecl0trueasianmore_(1).png",
-    "src": "https://hls.iptv-th.workers.dev/live/103/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/103/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Filmasia",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cb907420-b44c-11ee-9687-e7ccd66e1ea3_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/3999/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3999/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "TrueThaiFilm",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cffb79f0-b44d-11ee-80bd-b787d7bab688_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/3998/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3998/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Moviehits",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cccc0160-b44c-11ee-9f05-591527f02603_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/4000/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4000/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "TrueFilm1",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cad78460-b44c-11ee-80bd-b787d7bab688_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/4123/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4123/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "TrueSeries",
     "logo": "https://cms.dmpcdn.com/livetv/2024/03/01/201c6dd0-d79f-11ee-afcd-214a368edc48_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/112/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/112/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "TrueCCM",
     "logo": "https://cms.dmpcdn.com/livetv/2023/07/03/52962a90-195d-11ee-8d1b-f5f88b5481b0_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/3994/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3994/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "AXN",
     "logo": "https://e7.pngegg.com/pngimages/903/320/png-clipart-axn-television-channel-sony-channel-television-show-axn-television-angle-thumbnail.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4003/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4003/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "WarnerTV",
     "logo": "https://e7.pngegg.com/pngimages/962/1015/png-clipart-warner-tv-television-channel-wb-channel-warner-bros-others-television-text-thumbnail.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4004/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4004/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Dreamwork",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/ePP8UaRIcYsmjtmNcbGrN9pXvcChPTZdreamwork.png",
-    "src": "https://hls.iptv-th.workers.dev/live/59/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/59/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "HBO",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/movie/hbo.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4011/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4011/playlist.m3u8",
+      "https://ตัวอย่างลิงก์สำรองของคุณ.com/hbo.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "HBO Hits",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/movie/hbohits.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4010/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4010/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "HBO Signature",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/movie/hbosig.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4009/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4009/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "HBO Family",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/movie/hbofamily.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4008/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4008/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Cinemax",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/movie/cinemax.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4007/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4007/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "True Xzyte",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/entertain/truexzyte.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4017/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4017/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Rock-Entertainment",
     "logo": "https://tr.play-rfcdn.ais.th/iptvepg/images/poster/20250716135113006742.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4013/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4013/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Rock Action",
     "logo": "https://goodiptv.site/images/tv/wwS1fmIzbe3hHMGMzLdEqvJd09D7zX320240418201014RockAction.jpg",
-    "src": "https://hls.iptv-th.workers.dev/live/4012/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4012/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Gags",
     "logo": "https://i.postimg.cc/XvhXpRSc/IMG-2613.png",
-    "src": "https://distributionsjustepourrire-justforlaughsgags-1-us.tcl.wurl.tv/playlist.m3u8",
+    "src": [
+      "https://distributionsjustepourrire-justforlaughsgags-1-us.tcl.wurl.tv/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Mr.Bean Classic",
     "logo": "https://i.postimg.cc/hvsjcMx3/IMG-3443.png",
-    "src": "https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8",
+    "src": [
+      "https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8"
+    ],
     "category": "movie"
   },
   {
     "name": "Discovery",
     "logo": "https://tr.play-rfcdn.ais.th/iptvepg/images/poster/20250716135206006737.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4031/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4031/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "Discovery Asia",
     "logo": "https://goodiptv.site/images/tv/rSaQcQYOS8ELvJYkE0C7CtBpaYPawLU20240418210201DiscoveryAsia.jpg",
-    "src": "https://hls.iptv-th.workers.dev/live/4032/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4032/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "Animal Show",
     "logo": "https://s3.dooflixlive.com/assets/images/tv/dbLFi1PM8pqrH4pVCbR3HxZmYdQQP0z1245.jpg",
-    "src": "https://hls.iptv-th.workers.dev/live/2652/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/2652/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "trueEXPLORESCI",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/c9f16a20-b44c-11ee-8e80-c3f417d0d932_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/4025/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4025/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "trueEXPLOREWILD",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/ca686ee0-b44c-11ee-9f05-591527f02603_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/118/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/118/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "TLC",
     "logo": "https://tr.play-rfcdn.ais.th/iptvepg/images/poster/20250716133152006662.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4028/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4028/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "Food Network",
     "logo": "https://tr.play-rfcdn.ais.th/iptvepg/images/poster/20250716132733006506.png",
-    "src": "https://hls.iptv-th.workers.dev/live/4015/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/4015/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "Xtreme Outdoor Presented by HISTORY",
     "logo": "https://raw.githubusercontent.com/warningfm/v3/cast/img/6Nj1cz6.png",
-    "src": "https://d3t5fccwnhi5z7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-6uy8wco0v6aga/v1/aenetworks_skills_thrills_1/samsungheadend_us/latest/main/hls/playlist.m3u8",
+    "src": [
+      "https://d3t5fccwnhi5z7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-6uy8wco0v6aga/v1/aenetworks_skills_thrills_1/samsungheadend_us/latest/main/hls/playlist.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "PetCollective1",
     "logo": "https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/95/88/b8/9588b8be-5044-120d-7bc9-0cb7d200f9b8/App_Icon_-_Small-marketing.lsr/1024x1024bb.jpg",
-    "src": "https://the-pet-collective-international-in.samsung.wurl.tv/3000.m3u8",
+    "src": [
+      "https://the-pet-collective-international-in.samsung.wurl.tv/3000.m3u8"
+    ],
     "category": "documentary"
   },
   {
     "name": "Asianfood",
     "logo": "https://tr.play-rfcdn.ais.th/iptvepg/images/poster/20250716132625006739.png",
-    "src": "https://love.jco5sjujta.workers.dev/lx-origin/sd-asianfood_720/chunks.m3u8",
+    "src": [
+      "https://love.jco5sjujta.workers.dev/lx-origin/sd-asianfood_720/chunks.m3u8"
+    ],
     "category": "documentary"
   },
   {
-    "name": "maxsport1-a",
+    "name": "maxsport1",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3912/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3912/playlist.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax1.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport1-b",
+    "name": "maxsport2",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax1.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3911/playlist.m3u8",
+      "http://tv-premium-pro.com/live/wezqqszfr2/i7481xvrdf/1776176.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport2-a",
+    "name": "maxsport3",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3911/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3910/playlist.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax3.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport2-b",
+    "name": "maxsport4",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "http://tv-premium-pro.com/live/wezqqszfr2/i7481xvrdf/1776176.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3909/playlist.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax4.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport3-a",
+    "name": "maxsport5",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3910/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3908/playlist.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax5.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport3-b",
+    "name": "maxsport6",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax3.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3907/playlist.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax6.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport4-a",
+    "name": "maxsport7",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3909/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3906/playlist.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax7.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport4-b",
+    "name": "maxsport8",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax4.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3905/playlist.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax8.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport5-a",
+    "name": "maxsport9",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3908/playlist.m3u8",
+    "src": [
+      "https://la4.youllneverwalkalone.online:9310/v5/45025c88230b8c4ea93b72355b4c93f7/1760685853/e569b3c00e3c5808e13f0817a6296c8f/79dc853501578d668b11/1758374060/live/lx-origin/dooball66-max09a_720/chunks.m3u8",
+      "https://blive99.github.io/m3u8/sporttv/monomax9.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "maxsport5-b",
+    "name": "maxsport10",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax5.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport6-a",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3907/playlist.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport6-b",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax6.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport7-a",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3906/playlist.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport7-b",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax7.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport8-a",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/3905/playlist.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport8-b",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax8.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport9-a",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://la4.youllneverwalkalone.online:9310/v5/45025c88230b8c4ea93b72355b4c93f7/1760685853/e569b3c00e3c5808e13f0817a6296c8f/79dc853501578d668b11/1758374060/live/lx-origin/dooball66-max09a_720/chunks.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport9-b",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://blive99.github.io/m3u8/sporttv/monomax9.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport10-a",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://la4.youllneverwalkalone.online:9310/v5/45025c88230b8c4ea93b72355b4c93f7/1760685853/e569b3c00e3c5808e13f0817a6296c8f/79dc853501578d668b11/1756745180/live/lx-origin/th-monomax10bkp_720/chunks.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "maxsport10-b",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://github.com/zaxacaasada/logotv/raw/refs/heads/main/max10.m3u8",
+    "src": [
+      "https://la4.youllneverwalkalone.online:9310/v5/45025c88230b8c4ea93b72355b4c93f7/1760685853/e569b3c00e3c5808e13f0817a6296c8f/79dc853501578d668b11/1756745180/live/lx-origin/th-monomax10bkp_720/chunks.m3u8",
+      "https://github.com/zaxacaasada/logotv/raw/refs/heads/main/max10.m3u8"
+    ],
     "category": "sports"
   },
   {
     "name": "maxsport11",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
-    "src": "https://la4.youllneverwalkalone.online:9310/v5/5A20-NetMean7pVvReRpVA/1760942013/5cda20092dce3b04844439d11bafb327/JT7ACqip_P_LYcRrKjCK9Q/1760952693/live/lx-origin/dooball66-max11_720/chunks.m3u8",
+    "src": [
+      "https://la4.youllneverwalkalone.online:9310/v5/5A20-NetMean7pVvReRpVA/1760942013/5cda20092dce3b04844439d11bafb327/JT7ACqip_P_LYcRrKjCK9Q/1760952693/live/lx-origin/dooball66-max11_720/chunks.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "beIN Sports1-A🇹🇭",
+    "name": "beIN Sports 1",
     "logo": "https://pbs.twimg.com/profile_images/1597047716214804480/KNr1gIpJ.png",
-    "src": "https://hls.iptv-th.workers.dev/live/3648/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3648/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "beIN Sports2-A🇹🇭",
+    "name": "beIN Sports 2",
     "logo": "https://pbs.twimg.com/profile_images/1597047716214804480/KNr1gIpJ.png",
-    "src": "https://hls.iptv-th.workers.dev/live/3647/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3647/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "beIN Sports3-A🇹🇭",
+    "name": "beIN Sports 3",
     "logo": "https://pbs.twimg.com/profile_images/1597047716214804480/KNr1gIpJ.png",
-    "src": "https://hls.iptv-th.workers.dev/live/3646/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/3646/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "beIN Sports4-A🇹🇭",
+    "name": "beIN Sports 4",
     "logo": "https://pbs.twimg.com/profile_images/1597047716214804480/KNr1gIpJ.png",
-    "src": "https://love.jco5sjujta.workers.dev/vx-origin/epl-bein4_720/chunks.m3u8",
+    "src": [
+      "https://love.jco5sjujta.workers.dev/vx-origin/epl-bein4_720/chunks.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "beIN Sports5-A🇹🇭",
+    "name": "beIN Sports 5",
     "logo": "https://pbs.twimg.com/profile_images/1597047716214804480/KNr1gIpJ.png",
-    "src": "https://love.jco5sjujta.workers.dev/vx-origin/epl-bein5_720/chunks.m3u8",
+    "src": [
+      "https://love.jco5sjujta.workers.dev/vx-origin/epl-bein5_720/chunks.m3u8"
+    ],
     "category": "sports"
   },
   {
     "name": "Spotv",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPpAuJxMKdxKDrgJ1j-RL4RUJ_LD86ZdMjbA7bm8EFfFi8oP0Th6pvy6Y&s=10",
-    "src": "https://hls.iptv-th.workers.dev/live/1122/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1122/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
     "name": "Spotv2",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMhgWf-sIriE9zho9ApOr-uEOjMqPkuIyw5Q&s",
-    "src": "https://hls.iptv-th.workers.dev/live/1123/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1123/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "Truesporthd-a",
+    "name": "Truesporthd",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cdd42d20-b44d-11ee-9687-e7ccd66e1ea3_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1193/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1193/playlist.m3u8",
+      "https://love.tecobo5568.workers.dev/vx-origin/hd-tsport1_720/chunks.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "Truesporthd-b",
-    "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cdd42d20-b44d-11ee-9687-e7ccd66e1ea3_webp_original.webp",
-    "src": "https://love.tecobo5568.workers.dev/vx-origin/hd-tsport1_720/chunks.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "Truesporthd2-a",
+    "name": "Truesporthd2",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/ce5c21d0-b44d-11ee-aa7d-afe908f95743_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1135/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1135/playlist.m3u8",
+      "https://love.tecobo5568.workers.dev/vx-origin/hd-tsport2_720/chunks.m3u8"
+    ],
     "category": "sports"
   },
   {
-    "name": "Truesporthd2-b",
-    "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/ce5c21d0-b44d-11ee-aa7d-afe908f95743_webp_original.webp",
-    "src": "https://love.tecobo5568.workers.dev/vx-origin/hd-tsport2_720/chunks.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "Truesporthd3-a",
+    "name": "Truesporthd3",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/ce9707f0-b44d-11ee-8e80-c3f417d0d932_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1136/playlist.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "Truesporthd3-b",
-    "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/ce9707f0-b44d-11ee-8e80-c3f417d0d932_webp_original.webp",
-    "src": "https://love.vohelem576.workers.dev/vx-origin/hd-tsport3_720/chunks.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1136/playlist.m3u8",
+      "https://love.vohelem576.workers.dev/vx-origin/hd-tsport3_720/chunks.m3u8"
+    ],
     "category": "sports"
   },
   {
     "name": "Truesporthd4",
     "logo": "https://cms.dmpcdn.com/livetv/2023/12/15/759492c0-9aea-11ee-a6e1-935fb41ffad5_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1137/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1137/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
     "name": "Truesport5",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cf4a2b50-b44d-11ee-aa7d-afe908f95743_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1138/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1138/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
     "name": "Truesport7",
     "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cff0f2a0-b44d-11ee-9687-e7ccd66e1ea3_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1139/playlist.m3u8",
-    "category": "sports"
-  },
-  {
-    "name": "Truesport7",
-    "logo": "https://cms.dmpcdn.com/livetv/2024/01/16/cff0f2a0-b44d-11ee-9687-e7ccd66e1ea3_webp_original.webp",
-    "src": "https://cdn2.stream.atmflix.live/atmflixlive/tsp7/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1139/playlist.m3u8",
+      "https://cdn2.stream.atmflix.live/atmflixlive/tsp7/playlist.m3u8"
+    ],
     "category": "sports"
   },
   {
     "name": "TennisHD",
     "logo": "https://cms.dmpcdn.com/livetv/2023/04/28/f65ea900-e595-11ed-86b8-bb40638e3c49_webp_original.webp",
-    "src": "https://hls.iptv-th.workers.dev/live/1140/playlist.m3u8",
+    "src": [
+      "https://hls.iptv-th.workers.dev/live/1140/playlist.m3u8"
+    ],
     "category": "sports"
   }
 ]
