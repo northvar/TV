@@ -93,7 +93,8 @@
     "name": "MONO 29",
     "logo": "https://e7.pngegg.com/pngimages/776/550/png-clipart-thailand-mono29-series-television-channel-television-text.png",
     "src": [
-      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/29/29.mpd"
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/29/29.mpd",
+	  "https://live-us1.thaimomo.com/live-as/chmono29-2/chunklist_w15079969.m3u8"
     ],
     "category": "ทีวีดิจิตอล"
   },
@@ -141,7 +142,8 @@
     "name": "7HD",
     "logo": "https://cms.dmpcdn.com/livetv/2023/07/19/212d15e0-25e7-11ee-bfc1-85e95548413c_webp_original.webp",
     "src": [
-      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/35/35.mpd"
+      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/35/35.mpd",
+	  "https://live-us1.thaimomo.com/live-as/ch7hd-3/chunklist_w1229145161.m3u8"
     ],
     "category": "ทีวีดิจิตอล"
   },
