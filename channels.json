@@ -43,8 +43,9 @@
     "name": "TNN",
     "logo": "https://cms.dmpcdn.com/livetv/2023/10/02/75023d90-60f1-11ee-935a-5d4eba985103_webp_original.webp",
     "src": [
-       "https://cdn2.stream.atmflix.live/atmflixlive/tnn/playlist.m3u8",
-	  "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/16/16.mpd"
+      "https://hls.iptv-th.workers.dev/live/1003/playlist.m3u8",
+	  "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/16/16.mpd",
+	  "https://cdn2.stream.atmflix.live/atmflixlive/tnn/playlist.m3u8"
     ],
     "category": "ทีวีดิจิตอล"
   },
