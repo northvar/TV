@@ -70,7 +70,8 @@
     "name": "True4U",
     "logo": "https://cms.dmpcdn.com/livetv/2023/09/15/84504210-5377-11ee-aaa1-7d584d8ca7a4_webp_original.webp",
     "src": [
-      "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/24/24.mpd"
+      "https://live-us1.thaimomo.com/live-as/chTrue4u-2/chunklist_w1834505497.m3u8",
+	  "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/24/24.mpd"
     ],
     "category": "ทีวีดิจิตอล"
   },
