@@ -119,7 +119,7 @@
     { id:'documentary', label:'สารคดี' },
   ];
 
-  let CHANNELS = []; // รอรับข้อมูลจาก JSON
+  let CHANNELS = [];
 
   const PLACEHOLDER = 'data:image/svg+xml;utf8,' + encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88"><rect width="88" height="88" fill="%23333"/></svg>'
@@ -133,27 +133,22 @@
   let current = 'all';
   let hls = null, dash = null;
   let playlist = [], index = -1, idleTimer = null, toastTimer = null;
-  let failedAttempts = 0; // ตัวนับจำนวนครั้งที่สตรีมเสียติดกัน
+  let failedAttempts = 0; 
+  let currentSrcIndex = 0; // เพิ่มตัวนับลิงก์สำรอง
 
-  /* ---------- Fetch Data ---------- */
   async function loadData() {
     try {
       grid.innerHTML = '<p class="empty">กำลังโหลดข้อมูลช่องทีวี...</p>';
-      
       const response = await fetch('channels.json');
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      
       CHANNELS = await response.json();
-      
       renderTabs();
       renderGrid();
     } catch (error) {
-      console.error('Error loading channels:', error);
-      grid.innerHTML = '<p class="empty" style="color:#ff6b6b;">ไม่สามารถโหลดข้อมูลช่องทีวีได้<br>โปรดตรวจสอบว่าเปิดผ่าน Web Server และมีไฟล์ channels.json แล้ว</p>';
+      grid.innerHTML = '<p class="empty" style="color:#ff6b6b;">ไม่สามารถโหลดข้อมูลช่องทีวีได้</p>';
     }
   }
 
-  /* ---------- UI ---------- */
   function renderTabs(){
     tabs.replaceChildren(...CATEGORIES.map(c => {
       const b = document.createElement('button');
@@ -201,17 +196,18 @@
     }));
   }
 
-  /* ---------- Player ---------- */
   function openChannel(list, i){
     playlist = list;
     index = i;
-    failedAttempts = 0; // รีเซ็ตเมื่อผู้ใช้กดเลือกช่องเอง
+    failedAttempts = 0;
+    currentSrcIndex = 0; // รีเซ็ตตำแหน่งลิงก์สำรอง
     start(playlist[index]);
   }
 
   function switchBy(step, isAutoSkip = false){
     if (playlist.length < 2) return;
-    if (!isAutoSkip) failedAttempts = 0; // รีเซ็ตถ้าผู้ใช้กดเปลี่ยนช่องเอง
+    if (!isAutoSkip) failedAttempts = 0;
+    currentSrcIndex = 0; // รีเซ็ตตำแหน่งลิงก์สำรอง
 
     index = (index + step + playlist.length) % playlist.length;
     start(playlist[index]);
@@ -226,7 +222,10 @@
     navPrev.disabled = navNext.disabled = playlist.length < 2;
     wake();
 
-    const src = ch.src || '';
+    // ทำ Array ให้รองรับทั้งการใส่ string แบบเดิม หรือ array ลิงก์สำรอง
+    const sources = Array.isArray(ch.src) ? ch.src : [ch.src];
+    const src = sources[currentSrcIndex] || '';
+
     if (src.includes('.m3u8')) playHls(src);
     else if (src.includes('.mpd')) playDash(src);
     else { video.src = src; video.play().catch(()=>{}); ready(); }
@@ -242,45 +241,54 @@
         if (!d.fatal) return;
         if (d.type === Hls.ErrorTypes.NETWORK_ERROR) hls.startLoad();
         else if (d.type === Hls.ErrorTypes.MEDIA_ERROR) hls.recoverMediaError();
-        else fail('ลิงก์ช่องนี้ขัดข้อง');
+        else failLink('ขัดข้อง');
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = src;
       video.addEventListener('loadedmetadata', ready, { once:true });
-      video.addEventListener('error', () => fail('โหลดสตรีมไม่สำเร็จ'), { once:true });
+      video.addEventListener('error', () => failLink('โหลดสตรีมไม่สำเร็จ'), { once:true });
       video.play().catch(()=>{});
     } else {
-      fail('เบราว์เซอร์ไม่รองรับ');
+      failLink('เบราว์เซอร์ไม่รองรับ');
     }
   }
 
   function playDash(src){
-    if (typeof dashjs === 'undefined') return fail('ไม่พบตัวเล่น DASH');
+    if (typeof dashjs === 'undefined') return failLink('ไม่พบตัวเล่น DASH');
     dash = dashjs.MediaPlayer().create();
     dash.initialize(video, src, true);
     dash.on(dashjs.MediaPlayer.events.STREAM_INITIALIZED, ready);
-    dash.on(dashjs.MediaPlayer.events.ERROR, () => fail('สตรีมมีปัญหา'));
+    dash.on(dashjs.MediaPlayer.events.ERROR, () => failLink('สตรีมมีปัญหา'));
   }
 
   const ready = () => { 
     spinner.dataset.on = 'false'; 
-    failedAttempts = 0; // รีเซ็ตตัวนับเมื่อเล่นสำเร็จ
+    failedAttempts = 0; 
   };
 
-  function fail(msg){
+  // ฟังก์ชันเช็กว่าลิงก์พังให้เปลี่ยนเป็นลิงก์สำรอง หรือถ้าหมดแล้วให้ข้ามช่อง
+  function failLink(msg){
     spinner.dataset.on = 'false';
-    failedAttempts++;
+    const ch = playlist[index];
+    const sources = Array.isArray(ch.src) ? ch.src : [ch.src];
 
-    // ถ้ามีช่องเดียว หรือเสียติดกันครบทุกช่องในหมวดหมู่ ให้ปิด Player
-    if (playlist.length < 2 || failedAttempts >= playlist.length) {
-      note(`${msg} - ปิดใน 2 วินาที`);
-      setTimeout(close, 2000);
+    if (currentSrcIndex < sources.length - 1) {
+      // มีลิงก์สำรองเหลือ ให้สลับลิงก์
+      currentSrcIndex++;
+      note(`ลิงก์หลักเสีย กำลังโหลดสำรอง...`);
+      setTimeout(() => start(ch), 1500); // ดีเลย์นิดหน่อยเพื่อไม่ให้ระบบโหลดรัวเกินไป
     } else {
-      // Auto-skip ไปช่องถัดไป
-      note(`${msg} - ข้ามช่องอัตโนมัติ...`);
-      setTimeout(() => {
-        if (player.dataset.open === 'true') switchBy(1, true);
-      }, 2500);
+      // ไม่มีลิงก์สำรองแล้ว ให้รัน Auto-Skip
+      failedAttempts++;
+      if (playlist.length < 2 || failedAttempts >= playlist.length) {
+        note(`ลิงก์เสียทั้งหมด - ปิดใน 2 วินาที`);
+        setTimeout(close, 2000);
+      } else {
+        note(`ลิงก์เสียทั้งหมด - ข้ามช่องอัตโนมัติ...`);
+        setTimeout(() => {
+          if (player.dataset.open === 'true') switchBy(1, true);
+        }, 2500);
+      }
     }
   }
 
@@ -315,9 +323,9 @@
     clearTimeout(toastTimer);
     playlist = []; index = -1;
     failedAttempts = 0;
+    currentSrcIndex = 0;
   }
 
-  /* ---------- Init ---------- */
   tabs.addEventListener('click', e => {
     const tab = e.target.closest('.category');
     if (!tab) return;
