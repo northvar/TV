@@ -90,6 +90,8 @@
   .src-info{
     position:absolute;left:20px;bottom:20px;background:rgba(0,0,0,.7);padding:8px 12px;border-radius:8px;font-size:13px;z-index:101;
     max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    transition:opacity .35s ease;
+    opacity: 0;
   }
   @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
 </style>
@@ -113,8 +115,6 @@
 
   <div class="controls" id="controls">
     <button id="switchSource" aria-label="สลับลิงก์สำรอง">สลับลิงก์</button>
-    <button id="pipBtn" aria-label="Picture-in-Picture">PiP</button>
-    <button id="unmuteBtn" aria-label="เปิดเสียง">เสียง</button>
   </div>
 
   <div class="spinner" id="spinner" data-on="false" aria-hidden="true"></div>
@@ -150,7 +150,6 @@
   const grid = $('grid'), tabs = $('categories'), video = $('video');
   const player = $('player'), spinner = $('spinner'), toast = $('toast'), srcInfo = $('srcInfo');
   const navPrev = $('prev'), navNext = $('next'), switchSourceBtn = $('switchSource');
-  const pipBtn = $('pipBtn'), unmuteBtn = $('unmuteBtn');
 
   let current = 'all';
   let hls = null, dash = null;
@@ -180,13 +179,11 @@
       const saved = localStorage.getItem(LAST_KEY);
       if (saved){
         const { name, category } = JSON.parse(saved);
-        // try to highlight category and scroll to channel (not auto open)
         if (category) {
           current = category;
           renderTabs();
           renderGrid();
         }
-        // We won't autoplay to respect autoplay policies; user must click to play.
       }
     } catch (error) {
       console.error('loadData', error);
@@ -248,7 +245,6 @@
     currentSrcIndex = 0;
     perSourceRetryCounts.clear();
     start(playlist[index]);
-    // save last chosen channel (not autoplaying)
     try { localStorage.setItem(LAST_KEY, JSON.stringify({ name: playlist[index].name, category: current })); } catch(e){}
   }
 
@@ -271,7 +267,6 @@
     wake();
 
     const sources = Array.isArray(ch.src) ? ch.src.slice() : [ch.src];
-    // ensure currentSrcIndex is in bounds
     if (currentSrcIndex >= sources.length) currentSrcIndex = 0;
     const src = sources[currentSrcIndex] || '';
 
@@ -282,15 +277,13 @@
       return;
     }
 
-    // detect type
     if (src.includes('.m3u8')) playHls(src, ch);
     else if (src.includes('.mpd')) playDash(src, ch);
     else {
-      // try native
       video.src = src;
       video.addEventListener('loadedmetadata', ready, { once:true });
       video.addEventListener('error', () => handleSourceFailure(ch, src, 'โหลดสตรีมไม่สำเร็จ'), { once:true });
-      video.play().catch(()=>{ /* will typically be blocked until user interaction */ });
+      video.play().catch(()=>{});
     }
   }
 
@@ -310,7 +303,6 @@
         console.warn('hls error', d);
         if (!d.fatal) return;
         if (d.type === Hls.ErrorTypes.NETWORK_ERROR) {
-          // let Hls try; also track at source-level
           handleSourceFailure(ch, src, 'NETWORK_ERROR');
         } else if (d.type === Hls.ErrorTypes.MEDIA_ERROR) {
           try { hls.recoverMediaError(); } catch(e){ handleSourceFailure(ch, src, 'MEDIA_ERROR'); }
@@ -321,7 +313,6 @@
 
       hls.on(Hls.Events.MANIFEST_PARSED, onManifestParsed);
       hls.on(Hls.Events.ERROR, onError);
-      // store listeners for cleanup by closed hls.destroy()
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = src;
       video.addEventListener('loadedmetadata', ready, { once:true });
@@ -344,31 +335,40 @@
     dash.on(dashjs.MediaPlayer.events.ERROR, () => handleSourceFailure(ch, src, 'DASH ERROR'));
   }
 
+  // show src-info while loading; hide when ready (fade out)
+  function updateSrcInfo(src, cur, total){
+    srcInfo.textContent = `${cur+1}/${total} ${shorten(src, 80)}`;
+    srcInfo.setAttribute('aria-hidden', 'false');
+    srcInfo.style.opacity = '1';
+  }
+
   const ready = () => {
     spinner.dataset.on = 'false';
     failedAttempts = 0;
-    // show that audio is muted until user enables
-    srcInfo.setAttribute('aria-hidden', 'false');
+    // fade-out and then hide/clear
+    srcInfo.style.opacity = '0';
+    setTimeout(() => {
+      srcInfo.setAttribute('aria-hidden', 'true');
+      srcInfo.textContent = '';
+      srcInfo.style.opacity = '';
+    }, 400);
   };
 
   function handleSourceFailure(ch, src, reason){
     console.warn('handleSourceFailure', ch.name, src, reason);
     spinner.dataset.on = 'false';
     note(`ลิงก์มีปัญหา: ${reason}`);
-    // increment retry count for this source
     const key = `${ch.name}||${src}`;
     const count = (perSourceRetryCounts.get(key) || 0) + 1;
     perSourceRetryCounts.set(key, count);
 
     if (count <= perSourceRetryLimit) {
-      // exponential backoff
       const delay = 500 * Math.pow(2, count - 1);
       note(`กำลังลองใหม่ (${count}/${perSourceRetryLimit})...`);
       setTimeout(() => start(ch), delay);
       return;
     }
 
-    // exhausted retries for this source -> try next source if any
     const sources = Array.isArray(ch.src) ? ch.src : [ch.src];
     if (currentSrcIndex < sources.length - 1) {
       currentSrcIndex++;
@@ -377,7 +377,6 @@
       return;
     }
 
-    // no more sources -> auto-skip or close
     failedAttempts++;
     if (playlist.length < 2 || failedAttempts >= playlist.length) {
       note('ลิงก์เสียทั้งหมด - ปิดใน 2 วินาที');
@@ -393,7 +392,6 @@
   function failLink(msg){
     spinner.dataset.on = 'false';
     note(msg);
-    // try fallback or close
     const ch = playlist[index];
     const sources = Array.isArray(ch.src) ? ch.src : [ch.src];
     if (currentSrcIndex < sources.length - 1) {
@@ -403,10 +401,6 @@
     } else {
       handleSourceFailure(ch, sources[currentSrcIndex] || '', 'ทั้งหมดล้มเหลว');
     }
-  }
-
-  function updateSrcInfo(src, cur, total){
-    srcInfo.textContent = `${cur+1}/${total} ${shorten(src, 80)}`;
   }
 
   function shorten(str, len){
@@ -435,8 +429,9 @@
     } catch(e){}
     if (hls){ try { hls.destroy(); } catch(e){} hls = null; }
     if (dash){ try { dash.reset(); } catch(e){} dash = null; }
-    // reset src info
     srcInfo.textContent = '';
+    srcInfo.style.opacity = '';
+    srcInfo.setAttribute('aria-hidden', 'true');
   }
 
   function close(){
@@ -461,30 +456,6 @@
     perSourceRetryCounts.clear();
     note('สลับไปยังลิงก์: ' + (currentSrcIndex + 1));
     start(ch);
-  });
-
-  // PiP
-  pipBtn.addEventListener('click', async () => {
-    try {
-      if (document.pictureInPictureElement) await document.exitPictureInPicture();
-      else await video.requestPictureInPicture();
-    } catch (e) {
-      console.warn('PiP error', e);
-      note('ไม่สามารถเปิด PiP');
-    }
-  });
-
-  // Unmute button
-  unmuteBtn.addEventListener('click', () => {
-    if (video.muted) {
-      video.muted = false;
-      unmuteBtn.textContent = 'ปิดเสียง';
-      note('เสียงเปิดแล้ว');
-    } else {
-      video.muted = true;
-      unmuteBtn.textContent = 'เสียง';
-      note('ปิดเสียง');
-    }
   });
 
   tabs.addEventListener('click', e => {
@@ -519,7 +490,6 @@
     } catch(e){}
   }
 
-  // helper: set toast to be announced for screen readers immediately when appears
   const obs = new MutationObserver(() => {
     if (toast.dataset.on === 'true') {
       toast.setAttribute('aria-hidden', 'false');
@@ -529,8 +499,7 @@
   });
   obs.observe(toast, { attributes:true, attributeFilter:['data-on'] });
 
-  // Helper to show user-friendly console logs for debugging (optionally send to server)
-  function logError(...args){ console.error(...args); /* optionally POST to logging endpoint */ }
+  function logError(...args){ console.error(...args); }
 
   loadData();
 })();
