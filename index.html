@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ทีวีออนไลน์</title>
+<title>ʕ•ᴥ•ʔ ทีวีออนไลน์ ʕ•ᴥ•ʔ</title>
 <style>
   :root{
     --primary:#6D8517; --bg:#111; --surface:#222; --text:#fff;
@@ -90,7 +90,7 @@
   .src-info{
     position:absolute;left:20px;bottom:20px;background:rgba(0,0,0,.7);padding:8px 12px;border-radius:8px;font-size:13px;z-index:101;
     max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
-    transition:opacity .35s ease;
+    transition:opacity 1s ease; /* เพิ่มความช้าของ fade-out เป็น 1 วินาที */
     opacity: 0;
   }
   @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
@@ -345,13 +345,13 @@
   const ready = () => {
     spinner.dataset.on = 'false';
     failedAttempts = 0;
-    // fade-out and then hide/clear
+    // fade-out and then hide/clear (รอให้ transition 1s จบก่อน)
     srcInfo.style.opacity = '0';
     setTimeout(() => {
       srcInfo.setAttribute('aria-hidden', 'true');
       srcInfo.textContent = '';
       srcInfo.style.opacity = '';
-    }, 400);
+    }, 1100); // รอ 1.1s (เล็กน้อยเผื่อความหน่วง)
   };
 
   function handleSourceFailure(ch, src, reason){
