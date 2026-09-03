@@ -160,7 +160,8 @@
     "logo": "https://cms.dmpcdn.com/livetv/2024/06/26/48fb8a90-338b-11ef-a958-ed31043c43a3_webp_original.webp",
     "src": [
       "https://hls.iptv-th.workers.dev/live/1011/playlist.m3u8",
-	  "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/34/34.mpd"
+	  "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/34/34.mpd",
+	  "https://p0.cdn.vet/live/ch25/i/ch25i.m3u8?sid=b5yYzdlZWJiMmY5NzJhYzYzNjdiMQNjBlYTNjODQyOTIyN2Uy"
     ],
     "category": "ทีวีดิจิตอล"
   },
