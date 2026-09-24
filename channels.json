@@ -116,8 +116,9 @@
     "name": "ONE",
     "logo": "https://cms.dmpcdn.com/livetv/2019/01/16/396384be-35dc-4d11-bf04-06c9546ec7bc.png",
     "src": [
-      "https://fastly.live.brightcove.com/6393158620112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTMxNTg2MjAxMTIifQ.Pv-kHDlJaV05HiJ2AQmS3PnV2ZQg7ovszKptAGg1EN0/playlist-hls.m3u8",
-      "https://live-us1.thaimomo.com/live-as/chone-3/chunklist_w968479476.m3u8"
+      "https://live-us1.thaimomo.com/live-as/chone-3/chunklist_w968479476.m3u8",
+	  "https://fastly.live.brightcove.com/6393158620112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTMxNTg2MjAxMTIifQ.Pv-kHDlJaV05HiJ2AQmS3PnV2ZQg7ovszKptAGg1EN0/playlist-hls.m3u8"
+      
     ],
     "category": "ทีวีดิจิตอล"
   },
@@ -159,9 +160,11 @@
     "name": "PPTV",
     "logo": "https://cms.dmpcdn.com/livetv/2024/06/26/48fb8a90-338b-11ef-a958-ed31043c43a3_webp_original.webp",
     "src": [
-      "https://hls.iptv-th.workers.dev/live/1011/playlist.m3u8",
-	  "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/34/34.mpd",
-	  "https://p0.cdn.vet/live/ch25/i/ch25i.m3u8?sid=b5yYzdlZWJiMmY5NzJhYzYzNjdiMQNjBlYTNjODQyOTIyN2Uy"
+      "https://live-us1.thaimomo.com/live-as/chpptv-1/playlist.m3u8",
+	  "https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/36/36.mpd",
+	  "https://hls.iptv-th.workers.dev/live/1011/playlist.m3u8",	  
+	  "https://p0.cdn.vet/live/ch25/i/ch25i.m3u8?sid=b5yYzdlZWJiMmY5NzJhYzYzNjdiMQNjBlYTNjODQyOTIyN2Uy",
+	  "https://lb-gmmz.sky-cdn.com/gmm/pptv.m3u8"
     ],
     "category": "ทีวีดิจิตอล"
   },
