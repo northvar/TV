@@ -454,7 +454,8 @@
     "name": "maxsport1",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
     "src": [
-      "https://hls.iptv-th.workers.dev/live/3912/playlist.m3u8",
+      "http://v3tv.live:80/play/live.php?mac=00:1A:79:D0:30:8F&stream=1776175&extension=m3u8",
+	  "https://hls.iptv-th.workers.dev/live/3912/playlist.m3u8",
       "https://blive99.github.io/m3u8/sporttv/monomax1.m3u8"
     ],
     "category": "sports"
