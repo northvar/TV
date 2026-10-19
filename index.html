@@ -36,8 +36,15 @@
   .channel:hover,.channel:focus-visible{transform:scale(1.06);outline:none}
   .channel:focus-visible .thumb{box-shadow:0 0 0 3px #fff}
   .thumb{
-    width:var(--tile);height:var(--tile);object-fit:cover;border-radius:10px;
-    border:2px solid var(--primary);background:#333;
+    width:var(--tile);
+    height:var(--tile);
+    object-fit:contain;      /* เปลี่ยนจาก cover -> contain เพื่อไม่ให้โลโก้ถูกตัด */
+    display:block;
+    margin:auto;             /* จัดให้อยู่ตรงกลาง */
+    padding:8px;             /* เว้นขอบภายในกรอบถ้าต้องการพื้นที่รอบโลโก้ */
+    border-radius:10px;
+    border:2px solid var(--primary);
+    background:#333;
   }
   .channel-name{font-size:14px;text-align:center;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
