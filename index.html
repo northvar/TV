@@ -38,12 +38,12 @@
   .thumb{
     width:var(--tile);
     height:var(--tile);
-    object-fit:contain;      /* เปลี่ยนจาก cover -> contain เพื่อไม่ให้โลโก้ถูกตัด */
+    object-fit:contain;
     display:block;
-    margin:auto;             /* จัดให้อยู่ตรงกลาง */
-    padding:8px;             /* เว้นขอบภายในกรอบถ้าต้องการพื้นที่รอบโลโก้ */
-    border-radius:10px;
-    border:2px solid var(--primary);
+    margin:auto;
+    padding:0;
+    border-radius:8px;
+    border:0;
     background:#333;
   }
   .channel-name{font-size:14px;text-align:center;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -97,7 +97,7 @@
   .src-info{
     position:absolute;left:20px;bottom:20px;background:rgba(0,0,0,.7);padding:8px 12px;border-radius:8px;font-size:13px;z-index:101;
     max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
-    transition:opacity 1s ease; /* เพิ่มความช้าของ fade-out เป็น 1 วินาที */
+    transition:opacity 1s ease;
     opacity: 0;
   }
   @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
@@ -352,13 +352,12 @@
   const ready = () => {
     spinner.dataset.on = 'false';
     failedAttempts = 0;
-    // fade-out and then hide/clear (รอให้ transition 1s จบก่อน)
     srcInfo.style.opacity = '0';
     setTimeout(() => {
       srcInfo.setAttribute('aria-hidden', 'true');
       srcInfo.textContent = '';
       srcInfo.style.opacity = '';
-    }, 5100); // รอ 5.1s (เล็กน้อยเผื่อความหน่วง)
+    }, 5100);
   };
 
   function handleSourceFailure(ch, src, reason){
@@ -454,7 +453,6 @@
     currentSrcIndex = 0;
   }
 
-  // manual switch source
   switchSourceBtn.addEventListener('click', () => {
     if (index < 0 || !playlist.length) return;
     const ch = playlist[index];
@@ -488,7 +486,6 @@
     else if (e.key === 'ArrowDown' || e.key === 'PageDown') { e.preventDefault(); switchBy(1);  }
   });
 
-  // Media Session integration
   if ('mediaSession' in navigator) {
     try {
       navigator.mediaSession.setActionHandler('previoustrack', () => switchBy(-1));
