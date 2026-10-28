@@ -444,17 +444,14 @@
     "name": "maxsport1",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
     "src": [
-      "https://raw.githubusercontent.com/IPTV59/IPTV/refs/heads/main/V1.m3u8",
-	  "https://hls.iptv-th.workers.dev/live/3912/playlist.m3u8",
-      "https://blive99.github.io/m3u8/sporttv/monomax1.m3u8"
-    ],
+      "https://edge-2.m-fixer.net:8092/stream/monomax/monomax1/master.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTQvMjAyNiAxMTo0MDoyMiBBTSZoYXNoX3ZhbHVlPWIrUDh0dHl2QjVhbW9yQTNUaFJDR0E9PSZ2YWxpZG1pbnV0ZXM9MTIwJmlkPTE="
     "category": "sports"
   },
   {
     "name": "maxsport2",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
     "src": [
-      "http://lookontv.net:2095/live/eF8mnY1n/2zlNqCKNtX/115758.m3u8"
+      "https://edge-2.m-fixer.net:8092/stream/monomax/monomax2/master.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTQvMjAyNiAxMTo0MDoyMiBBTSZoYXNoX3ZhbHVlPWIrUDh0dHl2QjVhbW9yQTNUaFJDR0E9PSZ2YWxpZG1pbnV0ZXM9MTIwJmlkPTE="
     ],
     "category": "sports"
   },
