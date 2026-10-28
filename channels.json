@@ -454,8 +454,7 @@
     "name": "maxsport2",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
     "src": [
-      "https://hls.iptv-th.workers.dev/live/3911/playlist.m3u8",
-      "https://raw.githubusercontent.com/IPTV59/IPTV/refs/heads/main/V2.m3u8"
+      "http://lookontv.net:2095/live/eF8mnY1n/2zlNqCKNtX/115758.m3u8"
     ],
     "category": "sports"
   },
@@ -463,8 +462,7 @@
     "name": "maxsport3",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
     "src": [
-      "https://hls.iptv-th.workers.dev/live/3910/playlist.m3u8",
-      "https://raw.githubusercontent.com/IPTV59/IPTV/refs/heads/main/V3.m3u8"
+      "http://lookontv.net:2095/live/eF8mnY1n/2zlNqCKNtX/115760.m3u8"
     ],
     "category": "sports"
   },
@@ -472,8 +470,7 @@
     "name": "maxsport4",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRlw08TgtxtmLbbRb96hVIicFeCkgYSZBS2DLdK-Im_bN-jZF5_NT3Bx3&s=10",
     "src": [
-      "https://hls.iptv-th.workers.dev/live/3909/playlist.m3u8",
-      "https://raw.githubusercontent.com/IPTV59/IPTV/refs/heads/main/V4.m3u8"
+      "http://lookontv.net:2095/live/eF8mnY1n/2zlNqCKNtX/115762.m3u8"
     ],
     "category": "sports"
   },
